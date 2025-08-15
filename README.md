@@ -25,3 +25,12 @@ There are a few ways you can go about adding keywords or features:
 
 [vim-lsdyna](https://github.com/gradzikb/vim-lsdyna)  
 [DCHartlen's vscode extension](https://github.com/DCHartlen/LSDynaForVSCode)
+
+# dl
+## about
+- Script "processing.ipynb" processes a set of .k files in subdirectories (excluding those whose top-level directory name starts with an underscore).     
+- Each entry in the JSON represents a keyword snippet derived from a .k file, with placeholders like ?title?, ?path?, etc., replaced by $1, $2, etc., for use in snippet expansion.
+- This JSON can be dropped into the snippets folder of a VSCode extension or workspace settings, so that when a user types a keyword (like *DATABASE_BINARY_D3PLOT), VSCode will auto-suggest it and allow tabbing through the $1, $2, etc., fields.
+
+## TODO
+- card ended start and end with $-line
